@@ -2,45 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>llm-logger Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM Logger</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
-      background: #f9f9f9;
-      text-align: center;
-      padding: 2rem;
+      background: #ffffff;
       color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 2.4rem;
+      text-align: center;
     }
-    p {
-      font-size: 1.1rem;
-      color: #444;
+    .subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
     }
     .btn {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background: #222;
+      background: #000;
       color: white;
+      padding: 0.6rem 1.2rem;
       border-radius: 6px;
       text-decoration: none;
+      margin-top: 1rem;
+    }
+    .center {
+      text-align: center;
     }
     img {
       max-width: 100%;
-      margin-top: 2rem;
       border: 1px solid #ccc;
-      border-radius: 10px;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>🔍 llm-logger: A Local UI for Debugging LLMs Step-by-Step</h1>
-  <p>No cloud. No signup. Just inspect OpenAI calls locally.</p>
-  <a class="btn" href="https://github.com/avtark/llm_logger">View on GitHub</a>
-  <br/>
-  <img src="demo.gif" alt="llm-logger demo gif" />
+  <div class="container">
+    <h1>🔍 LLM Logger</h1>
+    <p class="subtitle">A Local UI for Debugging LLMs Step-by-Step</p>
+    <div class="center">
+      <a class="btn" href="https://github.com/avtark/llm_logger">View on GitHub</a>
+      <p><code>pip install llm-logger</code></p>
+    </div>
+
+    <img src="demo.gif" alt="Demo of LLM Logger" />
+
+    <h2>What is it?</h2>
+    <p>
+      <strong>LLM Logger</strong> is a local-first tool for inspecting OpenAI (or Anthropic) API calls.
+      It helps you debug chains and agents by logging everything locally and rendering it in a clean UI.
+    </p>
+
+    <h2>Features</h2>
+    <div class="features">
+      <ul>
+        <li>🧠 Prompt & response diffs between turns</li>
+        <li>📂 Logs stored locally as JSON</li>
+        <li>⚡ One-line setup via client wrapper</li>
+        <li>🔐 Fully offline — no server, no account</li>
+      </ul>
+      <ul>
+        <li>🔍 Tool call & system prompt inspection</li>
+        <li>⏱️ Metadata + latency tracking</li>
+        <li>🖥️ Simple, static UI served locally</li>
+        <li>🧩 Works with any Python codebase</li>
+      </ul>
+    </div>
+
+    <h2>Why use this?</h2>
+    <p>
+      Most LLM dev tools are hosted or heavyweight. <strong>llm-logger</strong> gives you a fast, lightweight
+      way to understand what your model is doing — no cloud needed.
+    </p>
+
+    <h2>Get Started</h2>
+    <p>Install the package:</p>
+    <pre><code>pip install llm-logger</code></pre>
+
+    <p>Then launch the viewer:</p>
+    <pre><code>llm_logger</code></pre>
+    <p>Or embed the UI in your app using FastAPI or Flask.</p>
+
+    <div class="center">
+      <p>🧪 Want to shape v2? <a href="https://github.com/avtark/llm_logger/discussions">Join the discussion</a></p>
+    </div>
+
+    <footer>
+      Built by <a href="https://twitter.com/avtarkhalsa">@avtarkhalsa</a> • MIT Licensed
+    </footer>
+  </div>
 </body>
 </html>
