@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LLM Logger</title>
+  <title>LLM-Debugger</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -76,19 +76,20 @@
 </head>
 <body>
   <div class="container">
-    <h1>🔍 LLM Logger</h1>
-    <p class="subtitle">A Local UI for Debugging LLMs Step-by-Step</p>
+    <h1>🔍 LLM-Debugger</h1>
+    <p class="subtitle">A local-first log viewer for LLM calls — inspect prompts, tool calls, and view the full conversation flow step by step.</p>
     <div class="center">
       <a class="btn" href="https://github.com/akhalsa/llm_debugger" target="_blank">🌐 View on GitHub</a>
-      <p class="install">pip install llm-logger</p>
+      <p class="install">pip install llm-debugger</p>
     </div>
 
-    <img src="demo.gif" alt="Demo of LLM Logger" />
+    <img src="demo.gif" alt="Demo of LLM-Debugger" />
 
     <h2>What is it?</h2>
     <p>
-      <strong>LLM Logger</strong> is a local-first tool for inspecting OpenAI (or Anthropic) API calls.
+      <strong>LLM-Debugger</strong> is a local-first tool for inspecting OpenAI (or Anthropic) API calls.
       It helps you debug chains and agents by logging everything locally and rendering it in a clean UI.
+      <a href="https://github.com/akhalsa/llm_debugger" target="_blank">Check out the repository</a> for more details.
     </p>
 
     <h2>Features</h2>
@@ -109,24 +110,25 @@
 
     <h2>Why use this?</h2>
     <p>
-      Most LLM dev tools are hosted or heavyweight. <strong>llm-logger</strong> gives you a fast, lightweight
+      Most LLM dev tools are hosted or heavyweight. <strong>llm-debugger</strong> gives you a fast, lightweight
       way to understand what your model is doing — no cloud needed.
     </p>
 
     <h2>Get Started</h2>
     <p>Install the package:</p>
-    <pre><code>pip install llm-logger</code></pre>
+    <pre><code>pip install llm-debugger</code></pre>
 
     <p>Then launch the viewer:</p>
-    <pre><code>llm_logger</code></pre>
+    <pre><code>llm_debugger</code></pre>
     <p>Or embed the UI in your app using FastAPI or Flask.</p>
 
     <div class="center">
       <p>🧪 Want to shape v2? <a href="https://github.com/akhalsa/llm_debugger/discussions" target="_blank">Join the discussion on GitHub</a></p>
+      <a class="btn" href="https://github.com/akhalsa/llm_debugger" target="_blank">🌐 View the Project on GitHub</a>
     </div>
 
     <footer>
-      Built by <a href="https://twitter.com/avtarkhalsa" target="_blank">@avtarkhalsa</a> • MIT Licensed
+      Built by <a href="https://github.com/akhalsa" target="_blank">@akhalsa</a> • MIT Licensed
     </footer>
   </div>
 </body>
